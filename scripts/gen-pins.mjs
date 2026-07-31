@@ -183,6 +183,7 @@ async function renderPin(title, type, outPath) {
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.mkdirSync(ARTICLES_DIR, { recursive: true }); // le dossier peut être absent (aucun article encore)
   const now = new Date();
   const files = fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith('.md'));
   let made = 0;

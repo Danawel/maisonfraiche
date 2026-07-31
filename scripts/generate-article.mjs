@@ -143,6 +143,7 @@ async function main() {
     process.exit(1);
   }
 
+  fs.mkdirSync(ARTICLES_DIR, { recursive: true }); // s'assure que le dossier existe
   const topics = loadJSON('scripts/topics.json');
   const batch = process.argv.includes('--batch');
   const count = batch ? 5 : 1;
