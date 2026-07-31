@@ -60,6 +60,18 @@
       "highlight": "Une seule unité extérieure pour climatiser jusqu'à 3 pièces : idéal maison ou appartement",
       "pros": ["3 pièces climatisées", "1 seule unité extérieure", "Réversible et Wi-Fi"],
       "cons": ["Installation complexe (frigoriste)", "Investissement plus important"]
+    },
+    {
+      "asin": "B098T62GCN",
+      "name": "Déshumidificateur Olimpia Splendid Aquaria S1 20P",
+      "shortName": "Olimpia Aquaria S1 20P",
+      "capacity": "20 L / 24 h",
+      "power": "Déshumidificateur (pas une clim)",
+      "priceHint": "~200 €",
+      "bestFor": "assainir l'air d'une pièce humide",
+      "highlight": "Complément idéal de la clim : élimine l'humidité pour un air plus sain et un confort accru",
+      "pros": ["Grande capacité (20 L/j)", "Filtration de l'air", "Fonctionne toute l'année"],
+      "cons": ["Ne refroidit pas (ce n'est pas un climatiseur)", "Réservoir à vider"]
     }
   ]
 }
