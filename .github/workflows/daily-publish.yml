@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "AirFryGuide Bot"
           git config user.email "bot@airfryguide.local"
-          git add src/content/articles/
+          git add src/content/articles/ scripts/topics.json
           if git diff --staged --quiet; then
             echo "Aucun nouvel article à publier aujourd'hui."
           else

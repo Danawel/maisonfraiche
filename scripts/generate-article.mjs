@@ -52,6 +52,59 @@ function nextTopic(topics) {
   return topics.find((t) => !existing.has(slugify(t.title)));
 }
 
+// Combien de sujets restent à rédiger
+function remainingCount(topics) {
+  const existing = new Set(fs.readdirSync(ARTICLES_DIR).map((f) => f.replace(/\.md$/, '')));
+  return topics.filter((t) => !existing.has(slugify(t.title))).length;
+}
+
+// ---- Réappro automatique de sujets (le blog ne tombe jamais à court) ----
+async function replenishTopics(existingTopics, howMany = 20) {
+  const products = loadJSON('src/data/products.json').products;
+  const asins = products.map((p) => `${p.asin} = ${p.shortName} (${p.bestFor})`).join('\n');
+  const existingTitles = existingTopics.map((t) => t.title).join('\n');
+
+  const prompt = `Tu génères des idées d'articles pour un blog français nommé MaisonFraîche, spécialisé dans la lutte contre la chaleur : climatiseurs (mobiles et split), unités extérieures, rafraîchisseurs d'air et déshumidificateurs.
+
+Propose ${howMany} NOUVEAUX sujets d'articles, DIFFÉRENTS de ceux déjà traités ci-dessous, à fort potentiel SEO (questions que les gens tapent sur Google).
+
+SUJETS DÉJÀ TRAITÉS (ne pas répéter) :
+${existingTitles}
+
+PRODUITS DISPONIBLES (utilise leurs ASIN dans le champ "products" quand c'est pertinent) :
+${asins}
+
+Réponds UNIQUEMENT avec un tableau JSON valide (aucun texte autour, aucune balise de code). Chaque élément a exactement cette forme :
+{"title": "…", "type": "guide|comparatif|article", "keywords": ["…","…","…"], "products": ["ASIN", "…"]}
+Le champ "products" peut être vide [] pour les sujets généraux (réglementation, entretien, conseils).`;
+
+  const stream = client.messages.stream({
+    model: MODEL,
+    max_tokens: 4000,
+    system: 'Tu es un expert SEO francophone. Tu réponds toujours par du JSON strict, sans commentaire.',
+    messages: [{ role: 'user', content: prompt }],
+  });
+  const message = await stream.finalMessage();
+  let raw = message.content.filter((b) => b.type === 'text').map((b) => b.text).join('').trim();
+  raw = raw.replace(/^```(json)?/i, '').replace(/```$/,'').trim();
+
+  let fresh;
+  try {
+    fresh = JSON.parse(raw);
+  } catch (e) {
+    console.error('⚠️  Impossible de parser les nouveaux sujets, réappro ignorée.');
+    return existingTopics;
+  }
+
+  // Dédoublonnage par slug de titre
+  const seen = new Set(existingTopics.map((t) => slugify(t.title)));
+  const added = fresh.filter((t) => t && t.title && !seen.has(slugify(t.title)));
+  const merged = existingTopics.concat(added);
+  fs.writeFileSync(path.join(ROOT, 'scripts/topics.json'), JSON.stringify(merged, null, 2) + '\n', 'utf8');
+  console.log(`🔄 Réappro : ${added.length} nouveaux sujets ajoutés (total ${merged.length}).`);
+  return merged;
+}
+
 // ---- Génération d'un article ----------------------------------------
 
 async function generateOne(topic, dateISO) {
@@ -144,15 +197,26 @@ async function main() {
   }
 
   fs.mkdirSync(ARTICLES_DIR, { recursive: true }); // s'assure que le dossier existe
-  const topics = loadJSON('scripts/topics.json');
+  let topics = loadJSON('scripts/topics.json');
   const batch = process.argv.includes('--batch');
   const count = batch ? 5 : 1;
 
+  // Si la réserve de sujets est basse, le blog en génère lui-même (100% autonome).
+  if (remainingCount(topics) < count + 3) {
+    console.log('ℹ️  Réserve de sujets basse : génération automatique de nouveaux sujets…');
+    topics = await replenishTopics(topics);
+  }
+
   for (let i = 0; i < count; i++) {
-    const topic = nextTopic(topics);
+    let topic = nextTopic(topics);
     if (!topic) {
-      console.log('ℹ️  Plus aucun sujet disponible dans topics.json. Ajoute-en pour continuer.');
-      break;
+      // Dernier filet de sécurité : on réapprovisionne à la volée puis on réessaie.
+      topics = await replenishTopics(topics);
+      topic = nextTopic(topics);
+      if (!topic) {
+        console.log('ℹ️  Aucun sujet disponible même après réappro. On s\'arrête.');
+        break;
+      }
     }
     // En mode batch, on échelonne les dates pour publier 1 par jour.
     await generateOne(topic, todayISO(batch ? i : 0));
