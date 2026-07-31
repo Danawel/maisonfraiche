@@ -1,0 +1,65 @@
+{
+  "_comment": "Base de données des produits climatisation mis en avant. L'ASIN est l'identifiant Amazon (dans l'URL après /dp/). 'capacity' = puissance frigorifique, 'power' = énergie/type, 'bestFor' = surface conseillée. Les prix sont INDICATIFS — ajuste-les selon le prix réel affiché sur Amazon.",
+  "products": [
+    {
+      "asin": "B0CY2YW8BT",
+      "name": "Climatiseur mobile Midea PortaSplit 4-en-1 12000 BTU",
+      "shortName": "Midea PortaSplit",
+      "capacity": "12000 BTU (3,5 kW)",
+      "power": "Réversible, R32, gaine d'évacuation",
+      "priceHint": "~500 €",
+      "bestFor": "pièces de 25 à 30 m²",
+      "highlight": "Mobile 4-en-1 (froid, chaud, déshumidification, ventilation), plus silencieux qu'un monobloc classique",
+      "pros": ["Sans installation par un pro", "4 fonctions en 1", "Réversible (chauffe aussi)"],
+      "cons": ["Gaine à évacuer par la fenêtre", "Moins performant qu'un split fixe"]
+    },
+    {
+      "asin": "B0GBWV696R",
+      "name": "Climatiseur mobile Temprium 7000 BTU 3-en-1",
+      "shortName": "Temprium 7000",
+      "capacity": "7000 BTU (2,0 kW)",
+      "power": "3-en-1, silencieux <48 dB",
+      "priceHint": "~250 €",
+      "bestFor": "pièces jusqu'à 20 m² (chambre, bureau)",
+      "highlight": "Compact, silencieux et abordable : idéal pour une chambre ou un petit budget",
+      "pros": ["Prix accessible", "Silencieux (<48 dB), mode nuit", "Kit fenêtre et appli inclus"],
+      "cons": ["Puissance limitée (petites pièces)", "Non réversible (froid uniquement)"]
+    },
+    {
+      "asin": "B09ZPS7KRV",
+      "name": "Climatiseur monosplit réversible Ariston Prios R32 12000 BTU",
+      "shortName": "Ariston Prios",
+      "capacity": "12000 BTU (3,5 kW)",
+      "power": "Réversible, R32, Wi-Fi",
+      "priceHint": "~550 €",
+      "bestFor": "pièces de 30 à 35 m²",
+      "highlight": "Monosplit mural réversible connecté Wi-Fi, livré avec son unité extérieure",
+      "pros": ["Réversible (clim + chauffage)", "Pilotage Wi-Fi", "Bon rapport qualité/prix en split"],
+      "cons": ["Pose par un frigoriste conseillée", "Unité extérieure à fixer"]
+    },
+    {
+      "asin": "B0BTZ78ZRL",
+      "name": "Climatiseur split Daikin Sensira ATXF35E 12000 BTU",
+      "shortName": "Daikin Sensira",
+      "capacity": "12000 BTU (3,5 kW)",
+      "power": "Classe A++/A+, R32, réversible",
+      "priceHint": "~750 € (hors pose)",
+      "bestFor": "pièces de 30 à 35 m²",
+      "highlight": "La référence japonaise : très silencieux, économe (A++) et fiable",
+      "pros": ["Très silencieux", "Classe A++ économe", "Fiabilité Daikin"],
+      "cons": ["Installation par un frigoriste obligatoire", "Prix + pose élevés"]
+    },
+    {
+      "asin": "B0D7M9B494",
+      "name": "Climatiseur tri-split Green Electric Plus 3 x 12000 BTU",
+      "shortName": "Green Electric tri-split",
+      "capacity": "3 x 12000 BTU",
+      "power": "Classe A++/A+, réversible, R32",
+      "priceHint": "~1500 € (hors pose)",
+      "bestFor": "3 pièces avec une seule unité extérieure",
+      "highlight": "Une seule unité extérieure pour climatiser jusqu'à 3 pièces : idéal maison ou appartement",
+      "pros": ["3 pièces climatisées", "1 seule unité extérieure", "Réversible et Wi-Fi"],
+      "cons": ["Installation complexe (frigoriste)", "Investissement plus important"]
+    }
+  ]
+}
