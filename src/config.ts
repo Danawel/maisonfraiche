@@ -5,26 +5,26 @@
 
 export const SITE = {
   // Nom du blog (affiché partout)
-  name: 'ClimGuide',
+  name: 'MaisonFraîche',
 
   // Slogan / description courte
-  tagline: 'Guides, comparatifs et conseils pour votre climatiseur et votre unité extérieure',
+  tagline: 'Climatiseurs, rafraîchisseurs et déshumidificateurs pour garder votre maison au frais',
 
   // Description longue (SEO, balise meta description de l'accueil)
   description:
-    'ClimGuide publie chaque jour des guides complets, des comparatifs et des ' +
-    'articles pour bien choisir, dimensionner et entretenir votre climatiseur et ' +
-    'votre unité extérieure. Conseils pratiques et sélections des meilleurs modèles.',
+    'MaisonFraîche publie chaque jour des guides, comparatifs et conseils pour lutter ' +
+    'contre la chaleur : climatiseurs mobiles et split, unités extérieures, rafraîchisseurs ' +
+    'd\'air et déshumidificateurs. Bien choisir, dimensionner et économiser.',
 
   // URL FINALE du blog — À REMPLACER après le déploiement Netlify.
-  // Exemple : 'https://climguide.netlify.app'
-  url: 'https://climguide.netlify.app',
+  // Exemple : 'https://maisonfraiche.netlify.app'
+  url: 'https://maisonfraiche.netlify.app',
 
   // Langue
   lang: 'fr',
 
   // Auteur affiché
-  author: 'La rédaction ClimGuide',
+  author: 'La rédaction MaisonFraîche',
 };
 
 // =============================================================
@@ -35,7 +35,7 @@ export const AMAZON = {
   // Tant que tu n'as pas ton compte, laisse ce placeholder :
   // les liens fonctionneront mais ne rapporteront rien.
   // Quand tu as ton vrai tag (ex: 'monblog-21'), remplace-le ici : tout se met à jour.
-  tag: 'climguide-21',
+  tag: 'maisonfraiche-21',
 
   // Domaine Amazon utilisé (France par défaut)
   domain: 'www.amazon.fr',

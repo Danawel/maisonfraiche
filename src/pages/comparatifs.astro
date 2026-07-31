@@ -4,7 +4,7 @@ import { articlesByType, typeLabel } from '../lib/articles.ts';
 const articles = await articlesByType('comparatif');
 const fmt = (d: Date) => d.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
-<BaseLayout title="Comparatifs" description="Nos comparatifs de climatiseurs et unités extérieures pour trouver le meilleur modèle selon votre budget et la surface à rafraîchir." path="/comparatifs">
+<BaseLayout title="Comparatifs" description="Nos comparatifs de climatiseurs, rafraîchisseurs et déshumidificateurs pour trouver la meilleure solution selon votre budget et la surface à rafraîchir." path="/comparatifs">
   <section class="hero"><h1>Comparatifs</h1><p>Le bon modèle, au bon prix, pour vos besoins.</p></section>
   <div class="container wide">
     {articles.length === 0 ? <p style="text-align:center;color:var(--muted)">Bientôt disponible.</p> : (

@@ -68,8 +68,9 @@ async function generateOne(topic, dateISO) {
     : '(aucun produit spécifique à mentionner nommément dans cet article)';
 
   const system =
-    "Tu es un rédacteur web francophone expert en climatisation et confort thermique, spécialisé dans les " +
-    "climatiseurs (mobiles, monoblocs, split) et les unités extérieures, ainsi que dans le référencement naturel (SEO). " +
+    "Tu es un rédacteur web francophone expert en confort thermique et lutte contre la chaleur, spécialisé dans les " +
+    "climatiseurs (mobiles, monoblocs, split), les unités extérieures, les rafraîchisseurs d'air et les " +
+    "déshumidificateurs, ainsi que dans le référencement naturel (SEO). " +
     "Tu maîtrises le dimensionnement (BTU/kW selon la surface), les classes énergétiques, la réglementation (F-Gas, " +
     "obligation de pose par un frigoriste pour les split), l'entretien et les économies d'énergie. Tu écris pour un blog " +
     "grand public : ton clair, concret, utile, sans blabla ni promesses exagérées. Tu ne mens jamais sur les " +
