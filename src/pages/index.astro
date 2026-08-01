@@ -11,12 +11,13 @@ function fmt(date: Date) {
 ---
 
 <BaseLayout path="/">
-  <section class="hero">
+  <section class="hero compact">
     <h1>Gardez votre maison au frais : clim, rafraîchisseurs et déshumidificateurs</h1>
     <p>{SITE.tagline}. Un nouveau guide, comparatif ou article publié chaque jour.</p>
   </section>
 
   <div class="container wide">
+    <h2 class="section-title">Nos derniers guides &amp; comparatifs</h2>
     {articles.length === 0 ? (
       <p style="text-align:center;color:var(--muted)">Les premiers articles arrivent très bientôt. Revenez demain !</p>
     ) : (

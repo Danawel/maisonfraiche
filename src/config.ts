@@ -62,6 +62,21 @@ export const ANALYTICS = {
   gaMeasurementId: 'G-FP9YRFNSRW',
 };
 
+// =============================================================
+//  NOS AUTRES BLOGS (affichés en bas de chaque page)
+//  Ajoute ici tes autres sites : ils se croisent pour envoyer
+//  du trafic de l'un à l'autre. emoji = petite vignette.
+// =============================================================
+export const OTHER_BLOGS = [
+  {
+    name: 'AirFryGuide',
+    tagline: 'Air fryers : guides, comparatifs & recettes',
+    product: 'Les meilleures friteuses sans huile',
+    url: 'https://statuesque-lolly-d520d0.netlify.app',
+    emoji: '🍟',
+  },
+];
+
 // Construit une URL affiliée propre à partir d'un ASIN (identifiant produit Amazon)
 export function amazonLink(asin: string): string {
   return `https://${AMAZON.domain}/dp/${asin}?tag=${AMAZON.tag}`;
