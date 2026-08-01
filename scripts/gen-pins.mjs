@@ -24,17 +24,21 @@ const fontBold = fs.readFileSync(path.join(FONT_DIR, 'Poppins-Bold.ttf'));
 const fontSemi = fs.readFileSync(path.join(FONT_DIR, 'Poppins-SemiBold.ttf'));
 
 // Illustration d'air fryer (SVG) utilisée en filigrane dans le fond de l'épingle.
+// Illustration : unité intérieure de climatiseur (split) + air frais + flocon.
 const AIRFRYER_SVG = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 520'>
-  <path fill='#e0632b' d='M126 26 L274 26 Q308 26 312 60 L338 300 Q342 336 306 336 L94 336 Q58 336 62 300 L88 60 Q92 26 126 26 Z'/>
-  <rect x='150' y='70' width='150' height='150' rx='0' fill='none'/>
-  <rect x='96' y='150' width='208' height='22' rx='11' fill='#fbf6f0'/>
-  <circle cx='250' cy='108' r='26' fill='#fbf6f0'/>
-  <circle cx='250' cy='108' r='11' fill='#e0632b'/>
-  <rect x='120' y='96' width='70' height='12' rx='6' fill='#fbf6f0'/>
-  <rect x='120' y='118' width='50' height='12' rx='6' fill='#fbf6f0'/>
-  <path fill='#e0632b' d='M104 336 L296 336 L300 452 Q302 486 268 486 L132 486 Q98 486 100 452 Z'/>
-  <rect x='150' y='452' width='100' height='26' rx='13' fill='#fbf6f0'/>
-  <rect x='120' y='300' width='160' height='14' rx='7' fill='#fbf6f0'/>
+  <rect x='40' y='150' width='320' height='90' rx='18' fill='#e0632b'/>
+  <rect x='40' y='150' width='320' height='40' rx='18' fill='#fbf6f0' opacity='0.25'/>
+  <rect x='60' y='214' width='280' height='10' rx='5' fill='#fbf6f0'/>
+  <circle cx='320' cy='176' r='8' fill='#fbf6f0'/>
+  <path d='M90 260 q10 40 0 80' stroke='#fbf6f0' stroke-width='10' fill='none' stroke-linecap='round' opacity='0.8'/>
+  <path d='M160 260 q10 50 0 100' stroke='#fbf6f0' stroke-width='10' fill='none' stroke-linecap='round' opacity='0.8'/>
+  <path d='M230 260 q10 50 0 100' stroke='#fbf6f0' stroke-width='10' fill='none' stroke-linecap='round' opacity='0.8'/>
+  <path d='M300 260 q10 40 0 80' stroke='#fbf6f0' stroke-width='10' fill='none' stroke-linecap='round' opacity='0.8'/>
+  <g stroke='#e0632b' stroke-width='9' stroke-linecap='round'>
+    <line x1='200' y1='400' x2='200' y2='480'/>
+    <line x1='165' y1='420' x2='235' y2='460'/>
+    <line x1='235' y1='420' x2='165' y2='460'/>
+  </g>
 </svg>`;
 const AIRFRYER_URI = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(AIRFRYER_SVG)}`;
 

@@ -10,6 +10,7 @@
       "priceHint": "~500 €",
       "bestFor": "pièces de 25 à 30 m²",
       "highlight": "Mobile 4-en-1 (froid, chaud, déshumidification, ventilation), plus silencieux qu'un monobloc classique",
+      "image": "https://m.media-amazon.com/images/I/712GMY9o1-L._AC_SL1500_.jpg",
       "pros": ["Sans installation par un pro", "4 fonctions en 1", "Réversible (chauffe aussi)"],
       "cons": ["Gaine à évacuer par la fenêtre", "Moins performant qu'un split fixe"]
     },
@@ -22,18 +23,20 @@
       "priceHint": "~250 €",
       "bestFor": "pièces jusqu'à 20 m² (chambre, bureau)",
       "highlight": "Compact, silencieux et abordable : idéal pour une chambre ou un petit budget",
+      "image": "https://m.media-amazon.com/images/I/71JpMyhOPVL._AC_SL1500_.jpg",
       "pros": ["Prix accessible", "Silencieux (<48 dB), mode nuit", "Kit fenêtre et appli inclus"],
       "cons": ["Puissance limitée (petites pièces)", "Non réversible (froid uniquement)"]
     },
     {
       "asin": "B09ZPS7KRV",
-      "name": "Climatiseur monosplit réversible Ariston Prios R32 12000 BTU",
+      "name": "Climatiseur monosplit réversible Ariston Prios R32 9000 BTU",
       "shortName": "Ariston Prios",
-      "capacity": "12000 BTU (3,5 kW)",
+      "capacity": "9000 BTU (2,6 kW)",
       "power": "Réversible, R32, Wi-Fi",
       "priceHint": "~550 €",
-      "bestFor": "pièces de 30 à 35 m²",
+      "bestFor": "pièces de 20 à 25 m²",
       "highlight": "Monosplit mural réversible connecté Wi-Fi, livré avec son unité extérieure",
+      "image": "https://m.media-amazon.com/images/I/41GIUNEtW8L._AC_SL1500_.jpg",
       "pros": ["Réversible (clim + chauffage)", "Pilotage Wi-Fi", "Bon rapport qualité/prix en split"],
       "cons": ["Pose par un frigoriste conseillée", "Unité extérieure à fixer"]
     },
@@ -46,6 +49,7 @@
       "priceHint": "~750 € (hors pose)",
       "bestFor": "pièces de 30 à 35 m²",
       "highlight": "La référence japonaise : très silencieux, économe (A++) et fiable",
+      "image": "https://m.media-amazon.com/images/I/514q0TUQW0L._AC_SL1200_.jpg",
       "pros": ["Très silencieux", "Classe A++ économe", "Fiabilité Daikin"],
       "cons": ["Installation par un frigoriste obligatoire", "Prix + pose élevés"]
     },
@@ -58,6 +62,7 @@
       "priceHint": "~1500 € (hors pose)",
       "bestFor": "3 pièces avec une seule unité extérieure",
       "highlight": "Une seule unité extérieure pour climatiser jusqu'à 3 pièces : idéal maison ou appartement",
+      "image": "https://m.media-amazon.com/images/I/61mXxhHIZKL._AC_SL1500_.jpg",
       "pros": ["3 pièces climatisées", "1 seule unité extérieure", "Réversible et Wi-Fi"],
       "cons": ["Installation complexe (frigoriste)", "Investissement plus important"]
     },
@@ -70,6 +75,7 @@
       "priceHint": "~200 €",
       "bestFor": "assainir l'air d'une pièce humide",
       "highlight": "Complément idéal de la clim : élimine l'humidité pour un air plus sain et un confort accru",
+      "image": "https://m.media-amazon.com/images/I/51-yVZ6kNBL._AC_SL1500_.jpg",
       "pros": ["Grande capacité (20 L/j)", "Filtration de l'air", "Fonctionne toute l'année"],
       "cons": ["Ne refroidit pas (ce n'est pas un climatiseur)", "Réservoir à vider"]
     }
