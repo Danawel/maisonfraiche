@@ -54,6 +54,12 @@ export const AMAZON = {
 // =============================================================
 export const ANALYTICS = {
   cloudflareToken: '',
+
+  // Google Analytics 4 (GRATUIT) : compte les visites ET les clics sur les liens Amazon.
+  // 1) Crée un compte sur https://analytics.google.com  2) Crée une propriété pour ton site
+  // 3) Copie l'identifiant de mesure (format G-XXXXXXXXXX) et colle-le ci-dessous.
+  // Laisse vide pour désactiver.
+  gaMeasurementId: '',
 };
 
 // Construit une URL affiliée propre à partir d'un ASIN (identifiant produit Amazon)

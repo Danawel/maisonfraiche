@@ -87,5 +87,28 @@ const ogImage = image ? new URL(image, SITE.url).toString() : null;
         data-cf-beacon={`{"token": "${ANALYTICS.cloudflareToken}"}`}
       />
     )}
+
+    {ANALYTICS.gaMeasurementId && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS.gaMeasurementId}`} />
+        <script set:html={`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${ANALYTICS.gaMeasurementId}');
+
+          // Traque chaque clic sur un lien affilié Amazon (bouton "Voir le prix")
+          document.addEventListener('click', function (e) {
+            var a = e.target.closest('a[rel~="sponsored"], a[href*="amazon."]');
+            if (!a) return;
+            var m = (a.getAttribute('href') || '').match(/\\/dp\\/([A-Z0-9]{10})/);
+            gtag('event', 'clic_lien_amazon', {
+              produit_asin: m ? m[1] : 'inconnu',
+              page: location.pathname
+            });
+          });
+        `} />
+      </>
+    )}
   </body>
 </html>
