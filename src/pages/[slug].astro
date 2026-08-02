@@ -2,7 +2,7 @@
 import { render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProductCard from '../components/ProductCard.astro';
-import { SITE, AMAZON } from '../config.ts';
+import { SITE, AMAZON, amazonLink } from '../config.ts';
 import { publishedArticles, typeLabel, thumbFor } from '../lib/articles.ts';
 import productData from '../data/products.json';
 
@@ -91,12 +91,37 @@ const jsonLd = [
     <h1>{d.title}</h1>
     <p class="meta">Publié le {dateStr} · {SITE.author}</p>
 
-    <img class="article-lead" src={leadImage} alt={leadAlt} loading="eager" />
+    {leadProduct ? (
+      <a href={amazonLink(leadProduct.asin)} target="_blank" rel="nofollow sponsored noopener">
+        <img class="article-lead" src={leadImage} alt={leadAlt} loading="eager" />
+      </a>
+    ) : (
+      <img class="article-lead" src={leadImage} alt={leadAlt} loading="eager" />
+    )}
 
     <p class="verif">🔄 Dernière vérification des modèles et des prix&nbsp;: {verifStr}</p>
 
     {d.products.length > 0 && (
       <p class="disclosure">{AMAZON.disclosure}</p>
+    )}
+
+    {featuredProducts.length > 0 && (
+      <aside class="top-picks">
+        <p class="tp-title">⭐ Notre sélection en un coup d'œil</p>
+        {featuredProducts.map((p) => (
+          <a class="pick" href={amazonLink(p.asin)} target="_blank" rel="nofollow sponsored noopener">
+            {p.image && <img src={p.image} alt={p.name} loading="lazy" />}
+            <span class="pick-info">
+              <strong>{p.shortName}</strong>
+              <span class="pick-sub">{p.bestFor}</span>
+            </span>
+            <span class="pick-right">
+              <span class="pick-price">{p.priceHint}</span>
+              <span class="pick-cta">Voir sur Amazon →</span>
+            </span>
+          </a>
+        ))}
+      </aside>
     )}
 
     <div class="article-body">

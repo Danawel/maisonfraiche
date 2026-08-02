@@ -59,6 +59,16 @@ const ogImage = image ? new URL(image, SITE.url).toString() : null;
     )}
   </head>
   <body>
+    {OTHER_BLOGS.length > 0 && (
+      <div class="topbar">
+        <div class="inner">
+          <span class="topbar-label">Nos autres sites&nbsp;:</span>
+          {OTHER_BLOGS.map((b) => (
+            <a href={b.url} target="_blank" rel="noopener"><span class="tb-emoji">{b.emoji}</span> {b.name}</a>
+          ))}
+        </div>
+      </div>
+    )}
     <header class="site-header">
       <div class="inner">
         <a class="brand" href="/">Maison<span>Fraîche</span></a>
