@@ -16,9 +16,8 @@ export const SITE = {
     'contre la chaleur : climatiseurs mobiles et split, unités extérieures, rafraîchisseurs ' +
     'd\'air et déshumidificateurs. Bien choisir, dimensionner et économiser.',
 
-  // URL FINALE du blog — À REMPLACER après le déploiement Netlify.
-  // Exemple : 'https://maisonfraiche.netlify.app'
-  url: 'https://sage-chimera-00671a.netlify.app',
+  // URL FINALE du blog (Cloudflare Pages)
+  url: 'https://maisonfraiche.pages.dev',
 
   // Langue
   lang: 'fr',
@@ -69,10 +68,17 @@ export const ANALYTICS = {
 // =============================================================
 export const OTHER_BLOGS = [
   {
+    name: 'RobotAspi',
+    tagline: 'Robots aspirateurs : comparatifs & guides',
+    product: 'Le bon robot aspirateur pour votre maison',
+    url: 'https://robotaspi.pages.dev',
+    emoji: '🤖',
+  },
+  {
     name: 'AirFryGuide',
     tagline: 'Air fryers : guides, comparatifs & recettes',
     product: 'Les meilleures friteuses sans huile',
-    url: 'https://statuesque-lolly-d520d0.netlify.app',
+    url: 'https://airfryguide.pages.dev',
     emoji: '🍟',
   },
 ];
