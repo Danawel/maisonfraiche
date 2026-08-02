@@ -10,6 +10,9 @@ export const SITE = {
   // Slogan / description courte
   tagline: 'Climatiseurs, rafraîchisseurs et déshumidificateurs pour garder votre maison au frais',
 
+  // Grand titre affiché en haut de la page d'accueil
+  heroTitle: 'Gardez votre maison au frais : clim, rafraîchisseurs et déshumidificateurs',
+
   // Description longue (SEO, balise meta description de l'accueil)
   description:
     'MaisonFraîche publie chaque jour des guides, comparatifs et conseils pour lutter ' +
