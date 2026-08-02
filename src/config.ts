@@ -23,7 +23,7 @@ export const SITE = {
   lang: 'fr',
 
   // Auteur affiché
-  author: 'La rédaction MaisonFraîche',
+  author: 'Danaël',
 };
 
 // =============================================================
@@ -87,3 +87,31 @@ export const OTHER_BLOGS = [
 export function amazonLink(asin: string): string {
   return `https://${AMAZON.domain}/dp/${asin}?tag=${AMAZON.tag}`;
 }
+
+// =============================================================
+//  AUTEUR (affiché sur les articles et la page À propos)
+//  Un auteur nommé rassure le lecteur et améliore le référencement.
+//  Change le nom/bio si tu veux : c'est le seul endroit à modifier.
+// =============================================================
+export const AUTHOR = {
+  name: 'Danaël',
+  role: `Fondateur & rédacteur de ${SITE.name}`,
+  avatarInitial: 'D',
+  bio:
+    "Je m'intéresse depuis des années au confort thermique de la maison. Sur MaisonFraîche, je décrypte " +
+    "climatiseurs, rafraîchisseurs et déshumidificateurs pour garder son logement au frais, simplement " +
+    "et sans se ruiner.",
+};
+
+// =============================================================
+//  MENTIONS LÉGALES (éditeur + hébergeur)
+//  Complète "editor" avec ton nom complet si tu le souhaites.
+// =============================================================
+export const LEGAL = {
+  editor: 'Danaël',
+  status: 'Éditeur individuel (particulier)',
+  email: 'Danashopify0075@gmail.com',
+  hostName: 'Cloudflare, Inc.',
+  hostAddress: '101 Townsend Street, San Francisco, CA 94107, États-Unis',
+  hostSite: 'https://www.cloudflare.com',
+};
