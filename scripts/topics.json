@@ -1,21 +1,455 @@
 [
-  { "title": "Climatiseur mobile ou split : lequel choisir pour votre logement ?", "type": "comparatif", "keywords": ["climatiseur mobile ou split", "différence clim mobile split", "quel climatiseur choisir"], "products": ["B0CY2YW8BT", "B09ZPS7KRV"] },
-  { "title": "Combien de BTU pour climatiser une pièce ? Le guide de dimensionnement", "type": "guide", "keywords": ["combien de BTU", "dimensionnement climatiseur", "puissance clim par m2"], "products": ["B0CY2YW8BT", "B0BTZ78ZRL"] },
-  { "title": "Meilleur climatiseur mobile 2026 : notre comparatif complet", "type": "comparatif", "keywords": ["meilleur climatiseur mobile", "comparatif clim mobile 2026", "climatiseur mobile avis"], "products": ["B0CY2YW8BT", "B0GBWV696R"] },
-  { "title": "Climatiseur réversible : rafraîchir l'été et chauffer l'hiver", "type": "guide", "keywords": ["climatiseur réversible", "clim chaud froid", "pompe à chaleur air air"], "products": ["B09ZPS7KRV", "B0BTZ78ZRL"] },
-  { "title": "Unité extérieure de climatisation : rôle, installation et entretien", "type": "guide", "keywords": ["unité extérieure climatisation", "installation unité extérieure", "entretien groupe extérieur clim"], "products": ["B0BTZ78ZRL", "B0D7M9B494"] },
-  { "title": "Combien consomme un climatiseur ? Le vrai coût sur votre facture", "type": "article", "keywords": ["consommation climatiseur", "coût électricité clim", "climatiseur économique"], "products": ["B0BTZ78ZRL"] },
-  { "title": "Climatiseur mobile : avantages, limites et pour qui c'est fait", "type": "article", "keywords": ["climatiseur mobile avis", "avantages clim mobile", "clim mobile ou fixe"], "products": ["B0CY2YW8BT"] },
-  { "title": "Installer un climatiseur split soi-même : ce qui est autorisé (et interdit)", "type": "guide", "keywords": ["installer climatiseur split", "pose clim soi-même", "réglementation installation climatisation"], "products": ["B09ZPS7KRV"] },
-  { "title": "Daikin, Mitsubishi ou Ariston : quelle marque de clim choisir ?", "type": "comparatif", "keywords": ["meilleure marque climatiseur", "daikin vs mitsubishi", "marque clim fiable"], "products": ["B0BTZ78ZRL", "B09ZPS7KRV"] },
-  { "title": "Classe énergétique d'un climatiseur (SEER, SCOP) : bien comprendre l'étiquette", "type": "guide", "keywords": ["classe énergétique climatiseur", "SEER SCOP", "étiquette énergie clim"], "products": ["B0BTZ78ZRL"] },
-  { "title": "Meilleur climatiseur pour une chambre : silencieux et efficace", "type": "comparatif", "keywords": ["climatiseur chambre", "clim silencieuse", "meilleur climatiseur nuit"], "products": ["B0GBWV696R", "B0CY2YW8BT"] },
-  { "title": "Entretenir son climatiseur : nettoyage des filtres et recharge de gaz", "type": "guide", "keywords": ["entretien climatiseur", "nettoyer filtre clim", "recharge gaz climatisation"], "products": [] },
-  { "title": "Climatiseur ou déshumidificateur : lequel contre la chaleur et l'humidité ?", "type": "comparatif", "keywords": ["climatiseur ou déshumidificateur", "déshumidificateur maison", "humidité et chaleur"], "products": ["B098T62GCN", "B0CY2YW8BT"] },
-  { "title": "Climatiser plusieurs pièces : le guide du multi-split", "type": "guide", "keywords": ["multi split", "climatiser plusieurs pièces", "clim bi-split tri-split"], "products": ["B0D7M9B494"] },
-  { "title": "Climatiseur pour grande pièce ou open space : quelle puissance viser ?", "type": "comparatif", "keywords": ["climatiseur grande pièce", "clim salon 40m2", "puissance clim open space"], "products": ["B0D7M9B494", "B0BTZ78ZRL"] },
-  { "title": "Réduire le bruit de son climatiseur (intérieur et unité extérieure)", "type": "guide", "keywords": ["bruit climatiseur", "clim silencieuse voisinage", "réduire bruit unité extérieure"], "products": ["B0BTZ78ZRL"] },
-  { "title": "Réglementation climatisation 2026 : voisinage, copropriété et déclaration", "type": "article", "keywords": ["réglementation climatisation", "clim copropriété", "autorisation unité extérieure"], "products": [] },
-  { "title": "Climatiseur ou ventilateur : que choisir selon votre besoin et budget ?", "type": "comparatif", "keywords": ["climatiseur ou ventilateur", "différence clim ventilateur", "rafraîchir sans clim"], "products": ["B0GBWV696R", "B0CY2YW8BT"] },
-  { "title": "10 erreurs à éviter quand on installe une climatisation", "type": "guide", "keywords": ["erreurs installation climatisation", "conseils pose clim", "mal installer climatiseur"], "products": ["B09ZPS7KRV"] }
+  {
+    "title": "Climatiseur mobile ou split : lequel choisir pour votre logement ?",
+    "type": "comparatif",
+    "keywords": [
+      "climatiseur mobile ou split",
+      "différence clim mobile split",
+      "quel climatiseur choisir"
+    ],
+    "products": [
+      "B0CY2YW8BT",
+      "B09ZPS7KRV"
+    ]
+  },
+  {
+    "title": "Combien de BTU pour climatiser une pièce ? Le guide de dimensionnement",
+    "type": "guide",
+    "keywords": [
+      "combien de BTU",
+      "dimensionnement climatiseur",
+      "puissance clim par m2"
+    ],
+    "products": [
+      "B0CY2YW8BT",
+      "B0BTZ78ZRL"
+    ]
+  },
+  {
+    "title": "Meilleur climatiseur mobile 2026 : notre comparatif complet",
+    "type": "comparatif",
+    "keywords": [
+      "meilleur climatiseur mobile",
+      "comparatif clim mobile 2026",
+      "climatiseur mobile avis"
+    ],
+    "products": [
+      "B0CY2YW8BT",
+      "B0GBWV696R"
+    ]
+  },
+  {
+    "title": "Climatiseur réversible : rafraîchir l'été et chauffer l'hiver",
+    "type": "guide",
+    "keywords": [
+      "climatiseur réversible",
+      "clim chaud froid",
+      "pompe à chaleur air air"
+    ],
+    "products": [
+      "B09ZPS7KRV",
+      "B0BTZ78ZRL"
+    ]
+  },
+  {
+    "title": "Unité extérieure de climatisation : rôle, installation et entretien",
+    "type": "guide",
+    "keywords": [
+      "unité extérieure climatisation",
+      "installation unité extérieure",
+      "entretien groupe extérieur clim"
+    ],
+    "products": [
+      "B0BTZ78ZRL",
+      "B0D7M9B494"
+    ]
+  },
+  {
+    "title": "Combien consomme un climatiseur ? Le vrai coût sur votre facture",
+    "type": "article",
+    "keywords": [
+      "consommation climatiseur",
+      "coût électricité clim",
+      "climatiseur économique"
+    ],
+    "products": [
+      "B0BTZ78ZRL"
+    ]
+  },
+  {
+    "title": "Climatiseur mobile : avantages, limites et pour qui c'est fait",
+    "type": "article",
+    "keywords": [
+      "climatiseur mobile avis",
+      "avantages clim mobile",
+      "clim mobile ou fixe"
+    ],
+    "products": [
+      "B0CY2YW8BT"
+    ]
+  },
+  {
+    "title": "Installer un climatiseur split soi-même : ce qui est autorisé (et interdit)",
+    "type": "guide",
+    "keywords": [
+      "installer climatiseur split",
+      "pose clim soi-même",
+      "réglementation installation climatisation"
+    ],
+    "products": [
+      "B09ZPS7KRV"
+    ]
+  },
+  {
+    "title": "Daikin, Mitsubishi ou Ariston : quelle marque de clim choisir ?",
+    "type": "comparatif",
+    "keywords": [
+      "meilleure marque climatiseur",
+      "daikin vs mitsubishi",
+      "marque clim fiable"
+    ],
+    "products": [
+      "B0BTZ78ZRL",
+      "B09ZPS7KRV"
+    ]
+  },
+  {
+    "title": "Classe énergétique d'un climatiseur (SEER, SCOP) : bien comprendre l'étiquette",
+    "type": "guide",
+    "keywords": [
+      "classe énergétique climatiseur",
+      "SEER SCOP",
+      "étiquette énergie clim"
+    ],
+    "products": [
+      "B0BTZ78ZRL"
+    ]
+  },
+  {
+    "title": "Meilleur climatiseur pour une chambre : silencieux et efficace",
+    "type": "comparatif",
+    "keywords": [
+      "climatiseur chambre",
+      "clim silencieuse",
+      "meilleur climatiseur nuit"
+    ],
+    "products": [
+      "B0GBWV696R",
+      "B0CY2YW8BT"
+    ]
+  },
+  {
+    "title": "Entretenir son climatiseur : nettoyage des filtres et recharge de gaz",
+    "type": "guide",
+    "keywords": [
+      "entretien climatiseur",
+      "nettoyer filtre clim",
+      "recharge gaz climatisation"
+    ],
+    "products": []
+  },
+  {
+    "title": "Climatiseur ou déshumidificateur : lequel contre la chaleur et l'humidité ?",
+    "type": "comparatif",
+    "keywords": [
+      "climatiseur ou déshumidificateur",
+      "déshumidificateur maison",
+      "humidité et chaleur"
+    ],
+    "products": [
+      "B098T62GCN",
+      "B0CY2YW8BT"
+    ]
+  },
+  {
+    "title": "Climatiser plusieurs pièces : le guide du multi-split",
+    "type": "guide",
+    "keywords": [
+      "multi split",
+      "climatiser plusieurs pièces",
+      "clim bi-split tri-split"
+    ],
+    "products": [
+      "B0D7M9B494"
+    ]
+  },
+  {
+    "title": "Climatiseur pour grande pièce ou open space : quelle puissance viser ?",
+    "type": "comparatif",
+    "keywords": [
+      "climatiseur grande pièce",
+      "clim salon 40m2",
+      "puissance clim open space"
+    ],
+    "products": [
+      "B0D7M9B494",
+      "B0BTZ78ZRL"
+    ]
+  },
+  {
+    "title": "Réduire le bruit de son climatiseur (intérieur et unité extérieure)",
+    "type": "guide",
+    "keywords": [
+      "bruit climatiseur",
+      "clim silencieuse voisinage",
+      "réduire bruit unité extérieure"
+    ],
+    "products": [
+      "B0BTZ78ZRL"
+    ]
+  },
+  {
+    "title": "Réglementation climatisation 2026 : voisinage, copropriété et déclaration",
+    "type": "article",
+    "keywords": [
+      "réglementation climatisation",
+      "clim copropriété",
+      "autorisation unité extérieure"
+    ],
+    "products": []
+  },
+  {
+    "title": "Climatiseur ou ventilateur : que choisir selon votre besoin et budget ?",
+    "type": "comparatif",
+    "keywords": [
+      "climatiseur ou ventilateur",
+      "différence clim ventilateur",
+      "rafraîchir sans clim"
+    ],
+    "products": [
+      "B0GBWV696R",
+      "B0CY2YW8BT"
+    ]
+  },
+  {
+    "title": "10 erreurs à éviter quand on installe une climatisation",
+    "type": "guide",
+    "keywords": [
+      "erreurs installation climatisation",
+      "conseils pose clim",
+      "mal installer climatiseur"
+    ],
+    "products": [
+      "B09ZPS7KRV"
+    ]
+  },
+  {
+    "title": "Rafraîchisseur d'air : comment ça marche et est-ce vraiment efficace ?",
+    "type": "guide",
+    "keywords": [
+      "rafraîchisseur d'air",
+      "climatiseur évaporatif",
+      "rafraîchisseur d'air efficace"
+    ],
+    "products": []
+  },
+  {
+    "title": "Meilleur rafraîchisseur d'air 2026 : notre comparatif complet",
+    "type": "comparatif",
+    "keywords": [
+      "meilleur rafraîchisseur d'air",
+      "comparatif rafraîchisseur",
+      "rafraîchisseur d'air pas cher"
+    ],
+    "products": []
+  },
+  {
+    "title": "Déshumidificateur : comment bien choisir son modèle",
+    "type": "guide",
+    "keywords": [
+      "choisir un déshumidificateur",
+      "déshumidificateur maison",
+      "déshumidificateur d'air"
+    ],
+    "products": [
+      "B098T62GCN"
+    ]
+  },
+  {
+    "title": "Meilleur déshumidificateur 2026 : notre comparatif",
+    "type": "comparatif",
+    "keywords": [
+      "meilleur déshumidificateur",
+      "comparatif déshumidificateur",
+      "déshumidificateur efficace"
+    ],
+    "products": [
+      "B098T62GCN"
+    ]
+  },
+  {
+    "title": "Humidité et moisissures : comment un déshumidificateur peut vous sauver",
+    "type": "article",
+    "keywords": [
+      "moisissure humidité",
+      "déshumidificateur moisissure",
+      "humidité maison"
+    ],
+    "products": [
+      "B098T62GCN"
+    ]
+  },
+  {
+    "title": "Climatiser une pièce sous les combles : quelle solution choisir ?",
+    "type": "guide",
+    "keywords": [
+      "climatiser combles",
+      "climatiseur sous toit",
+      "chambre mansardée chaleur"
+    ],
+    "products": [
+      "B0CY2YW8BT",
+      "B0GBWV696R"
+    ]
+  },
+  {
+    "title": "Climatiser une véranda : les meilleures solutions contre la chaleur",
+    "type": "guide",
+    "keywords": [
+      "climatiser véranda",
+      "véranda trop chaude",
+      "climatiseur véranda"
+    ],
+    "products": [
+      "B0BTZ78ZRL",
+      "B0D7M9B494"
+    ]
+  },
+  {
+    "title": "Climatiseur mobile sans évacuation extérieure : mythe ou réalité ?",
+    "type": "article",
+    "keywords": [
+      "climatiseur sans évacuation",
+      "climatiseur sans tuyau",
+      "climatiseur mobile sans fenêtre"
+    ],
+    "products": []
+  },
+  {
+    "title": "Bien installer le tuyau d'évacuation de son climatiseur mobile",
+    "type": "guide",
+    "keywords": [
+      "tuyau évacuation climatiseur",
+      "installer climatiseur mobile",
+      "évacuation air chaud clim"
+    ],
+    "products": []
+  },
+  {
+    "title": "Aides, primes et TVA réduite pour installer une climatisation en 2026",
+    "type": "guide",
+    "keywords": [
+      "prime climatisation",
+      "aide installation clim",
+      "TVA réduite climatiseur"
+    ],
+    "products": []
+  },
+  {
+    "title": "Climatiseur split sans frigoriste : comment ça marche vraiment ?",
+    "type": "article",
+    "keywords": [
+      "climatiseur split facile installer",
+      "climatiseur prêt à poser",
+      "split sans installateur"
+    ],
+    "products": [
+      "B0CY2YW8BT"
+    ]
+  },
+  {
+    "title": "Gaz R32 : ce qu'il faut savoir avant d'acheter un climatiseur",
+    "type": "guide",
+    "keywords": [
+      "gaz R32",
+      "fluide frigorigène climatiseur",
+      "R32 vs R410A"
+    ],
+    "products": []
+  },
+  {
+    "title": "Climatiser un studio ou petit appartement : nos meilleures solutions",
+    "type": "guide",
+    "keywords": [
+      "climatiser studio",
+      "climatiseur petit appartement",
+      "clim petite pièce"
+    ],
+    "products": [
+      "B0GBWV696R",
+      "B09ZPS7KRV"
+    ]
+  },
+  {
+    "title": "Dormir avec la climatisation : bonnes pratiques et température idéale",
+    "type": "article",
+    "keywords": [
+      "dormir avec climatisation",
+      "température idéale sommeil",
+      "climatiseur la nuit"
+    ],
+    "products": []
+  },
+  {
+    "title": "Climatisation et santé : allergies, air sec, les bons réflexes",
+    "type": "article",
+    "keywords": [
+      "climatisation santé",
+      "air sec climatiseur",
+      "climatisation allergie"
+    ],
+    "products": []
+  },
+  {
+    "title": "Rafraîchir sa maison sans climatiseur : astuces qui fonctionnent vraiment",
+    "type": "article",
+    "keywords": [
+      "rafraîchir maison sans clim",
+      "astuce chaleur maison",
+      "garder maison fraîche"
+    ],
+    "products": []
+  },
+  {
+    "title": "Prix d'installation d'un climatiseur split par un professionnel",
+    "type": "guide",
+    "keywords": [
+      "prix installation climatiseur",
+      "coût pose clim split",
+      "tarif installateur climatisation"
+    ],
+    "products": []
+  },
+  {
+    "title": "Climatiser 3 pièces avec une seule unité extérieure : le tri-split expliqué",
+    "type": "article",
+    "keywords": [
+      "climatiseur tri-split",
+      "multi-split 3 pièces",
+      "climatiseur plusieurs chambres"
+    ],
+    "products": [
+      "B0D7M9B494"
+    ]
+  },
+  {
+    "title": "Climatiseur qui fuit de l'eau : causes et solutions",
+    "type": "article",
+    "keywords": [
+      "climatiseur fuite eau",
+      "clim qui coule",
+      "panne climatiseur eau"
+    ],
+    "products": []
+  },
+  {
+    "title": "Durée de vie d'un climatiseur : quand faut-il le remplacer ?",
+    "type": "article",
+    "keywords": [
+      "durée de vie climatiseur",
+      "remplacer climatiseur",
+      "climatiseur vieux"
+    ],
+    "products": []
+  }
 ]
